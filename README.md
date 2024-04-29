@@ -13,12 +13,12 @@ This grammar consists defining how sentences (S), noun phrases (NP), articles (A
 ## Models
 This is the model we are using to define our sentences (S). 
 
-S -> NP V '.'
-NP -> ART ADJ N | ART N
-ART -> 'Der' | 'Die' | 'Ein' | 'Eine'
-ADJ -> 'großer' | 'kleiner' | 'schöner' | 'große' | 'kleine' | 'schöne'
-N -> 'Mann' | 'Frau' | 'Hund' | 'Katze'
-V -> 'geht' | 'singt' | 'läuft'
+- S -> NP V '.'
+- NP -> ART ADJ N | ART N
+- ART -> 'Der' | 'Die' | 'Ein' | 'Eine'
+- ADJ -> 'großer' | 'kleiner' | 'schöner' | 'große' | 'kleine' | 'schöne'
+- N -> 'Mann' | 'Frau' | 'Hund' | 'Katze'
+- V -> 'geht' | 'singt' | 'läuft'
 
 We are not using left recursion and the vocabulary is restricted. If we wish to add more words to this, we would need to add them manually to the code.
 
